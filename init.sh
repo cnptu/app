@@ -1,3 +1,3 @@
 echo "init"
-echo data
+echo date
 cron -f
