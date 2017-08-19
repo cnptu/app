@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+echo "v0.0.1" > /root/version
+cat /root/version
 echo $ENV_LABEL
 echo "adding ci pkey"
 if [ ! -f ~/.root.useradded ];
@@ -12,9 +14,10 @@ chmod 600 ~/.ssh/authorized_keys
 touch ~/.root.useradded
 fi
 echo "gen nginx config"
-echo "hi" >/code/index.php
+
 mkdir -p /opt/etc/nginx_conf_d
 echo "
+
 server {
 	listen   80; ## listen for ipv4; this line is default and implied
 	listen   [::]:80 default ipv6only=on; ## listen for ipv6
