@@ -12,9 +12,9 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDc1rs3ysOnEqmEKldQN8ilYNyOUFa8XZVC7HHxbJqn
 chmod 600 ~/.ssh/authorized_keys
 touch ~/.root.useradded
 fi
-mkdir -p /opt/etc/
+mkdir -p /opt/etc/nginx_conf_d
 echo "
 #nginx confi
-" > /opt/etc/site.conf
+" > /opt/etc/nginx_conf_d/site.conf
 
 cron -f
