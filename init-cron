@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 echo $ENV_LABEL
-export
 echo "adding ci pkey"
 if [ ! -f ~/.root.useradded ];
 then
