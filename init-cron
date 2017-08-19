@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-echo "v0.0.1" > /root/version
+echo "v0.0.2" > /root/version
 cat /root/version
 echo $ENV_LABEL
 echo "adding ci pkey"
@@ -13,8 +13,8 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDc1rs3ysOnEqmEKldQN8ilYNyOUFa8XZVC7HHxbJqn
 chmod 600 ~/.ssh/authorized_keys
 touch ~/.root.useradded
 fi
+echo "hi" > /code/index.php
 echo "gen nginx config"
-
 mkdir -p /opt/etc/nginx_conf_d
 echo "
 
