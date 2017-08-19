@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-echo "v0.0.2" > /root/version
+echo "v0.0.3" > /root/version
 cat /root/version
 echo $ENV_LABEL
 echo "adding ci pkey"
