@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+echo $ENV_LABEL
 export
 echo "adding ci pkey"
 if [ ! -f ~/.root.useradded ];
@@ -11,5 +12,9 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDc1rs3ysOnEqmEKldQN8ilYNyOUFa8XZVC7HHxbJqn
 chmod 600 ~/.ssh/authorized_keys
 touch ~/.root.useradded
 fi
+mkdir -p /opt/etc/
+echo "
+#nginx confi
+" > /opt/etc/site.conf
 
 cron -f
